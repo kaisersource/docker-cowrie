@@ -50,7 +50,7 @@ USER ${COWRIE_USER}
 
 WORKDIR ${COWRIE_HOME}
 
-RUN git clone --separate-git-dir=/tmp/cowrie.git https://github.com/cowrie/cowrie ${COWRIE_HOME}/cowrie-git && \
+RUN git clone --separate-git-dir=/tmp/cowrie.git https://github.com/kaisersource/cowrie ${COWRIE_HOME}/cowrie-git && \
       python3 -m venv cowrie-env && \
       . cowrie-env/bin/activate && \
       pip install --no-cache-dir --upgrade pip wheel setuptools && \
